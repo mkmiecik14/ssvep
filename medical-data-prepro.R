@@ -41,8 +41,8 @@ arm1_screen <-
   arm1 %>% 
   filter(redcap_event_name == "screen_visit_arm_1") %>% 
   select(-record_number) %>%
-  mutate_at(vars(subject_id, mh37a), as.numeric) %>% # converts to numeric
-  mutate_at(vars(mh29_acu_mos), as.character) # converts to character
+  mutate_at(vars(subject_id, mh37a), as.numeric) #%>% # converts to numeric
+  #mutate_at(vars(mh29_acu_mos), as.character) # converts to character
 
 arm1_assess <- 
   arm1 %>% 
@@ -56,8 +56,8 @@ arm2_screen <-
   arm2 %>% 
   filter(redcap_event_name == "screen_visit_arm_1") %>% 
   select(-record_number) %>%
-  mutate_at(vars(subject_id, mh37a), as.numeric) %>% # converts to numeric
-  mutate_at(vars(mh29_acu_mos), as.character) # converts to character
+  mutate_at(vars(subject_id, mh37a), as.numeric) #%>% # converts to numeric
+  #mutate_at(vars(mh29_acu_mos), as.character) # converts to character
 
 arm2_assess <- 
   arm2 %>% 
